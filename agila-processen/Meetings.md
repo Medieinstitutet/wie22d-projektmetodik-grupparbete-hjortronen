@@ -12,13 +12,13 @@
     Skrivs på Engelska.
     Beskrivande variabelnamn. Om svårigheter med namngivning uppstår frågar man efter tips i teamet.
 
-# Datum: 2023-12-07
+# Standup Datum: 2023-12-07
 
 ## Namn: ALLA
 **Senaste dygnet** Lärt oss om Next.js och Tailwind. Har gått bra. Vidare kunskaper får under resans gång. 
 **Ett problem vi har** Inga problem har uppstått i nuläget
 **Vi behöver hjälp med** Inget
-**Idag har vi lärt oss** Next.js, Scum är toppen, eget ansvar är trevligt
+**Idag har vi lärt oss** Next.js, Scrum är toppen, eget ansvar är trevligt
 
 ## Namn: Johan Lindell
 **Senaste dygnet** Byggt vidare på projektets "boilerplate"
