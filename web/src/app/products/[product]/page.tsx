@@ -1,5 +1,5 @@
-import React from "react";
+export default function product({ params }: { params: { product: string } }) {
+  const product = params.product;
 
-export default function page() {
-  return <div>single product page</div>;
+  return <div>My product: {product}</div>;
 }
