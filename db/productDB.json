@@ -1,9 +1,78 @@
 {
+  ],
   "products": [
     {
-      "id": "1",
-      "name": "ProductX2000",
-      "description": "loremloremloremlorem X2000"
+      "id": 1,
+      "title": "stekpanna1",
+      "description": "En riktigt fin stekpanna",
+      "img": "/placeholder-image.png",
+      "imgAlt": "Detta är en bild1",
+      "category": "stekpanna",
+      "price": 299
+    },
+    {
+      "id": 2,
+      "title": "stekpanna2",
+      "description": "En jättefin stekpanna med teflonbeläggning",
+      "img": "/placeholder-image.png",
+      "imgAlt": "Detta är en bild2",
+      "category": "stekpanna",
+      "price": 399
+    },
+    {
+      "id": 3,
+      "title": "stekpanna3",
+      "description": "En riktigt fin stekpanna",
+      "img": "/placeholder-image.png",
+      "imgAlt": "Detta är en bild3",
+      "category": "stekpanna",
+      "price": 199
+    },
+    {
+      "id": 4,
+      "title": "stekpanna4",
+      "description": "En riktigt fin stekpanna",
+      "img": "/placeholder-image.png",
+      "imgAlt": "Detta är en bild4",
+      "category": "stekpanna",
+      "price": 199
+    },
+    {
+      "id": 5,
+      "title": "stekpanna5",
+      "description": "En riktigt fin stekpanna",
+      "img": "/placeholder-image.png",
+      "imgAlt": "Detta är en bild5",
+      "category": "stekpanna",
+      "price": 199
+    },
+    {
+      "id": 6,
+      "title": "stekpanna6",
+      "description": "En riktigt fin stekpanna",
+      "img": "/placeholder-image.png",
+      "imgAlt": "Detta är en bild6",
+      "category": "stekpanna",
+      "price": 199
+    },
+    {
+      "id": 7,
+      "title": "stekpanna7",
+      "description": "En jättefin stekpanna med teflonbeläggning",
+      "img": "/placeholder-image.png",
+      "imgAlt": "Detta är en bild7",
+      "category": "stekpanna",
+      "price": 499
     }
-  ]
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
