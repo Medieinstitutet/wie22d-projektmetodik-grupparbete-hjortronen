@@ -1,3 +1,4 @@
+
 import React from "react";
 
 import ProductCard from "../../components/ProductCard/productCard";
@@ -36,3 +37,4 @@ export default async function products() {
   </>
   
 }
+
