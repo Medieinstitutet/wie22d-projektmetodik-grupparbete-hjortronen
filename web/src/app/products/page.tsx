@@ -2,16 +2,9 @@
 import React from "react";
 
 import ProductCard from "../../components/ProductCard/productCard";
+import IProduct from "@/interface/IProductCard";
+import Link from "next/link";
 
-interface IProduct {
-  id: string;
-  title: string;
-  description: string;
-  category: string;
-  img: string;
-  imgAlt: string;
-  price: number;
-}
 
 export default async function products() {
 
@@ -27,7 +20,9 @@ export default async function products() {
       {products.map((product: IProduct) => (
         <div className="ProductCardRender" key={product.id}>
           
+          <Link href={`/products/${product.id}`}>
             <ProductCard product={product} />
+          </Link>
           
         </div>
       ))}
