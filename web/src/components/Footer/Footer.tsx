@@ -15,7 +15,7 @@ const Footer = () => {
         <div className='w-1/5 h-20 text-center'>Lorem</div>
         <div className='w-1/5 h-20 text-center'>Lorem</div>
         <div className='w-1/5 h-20 text-center'>Lorem</div>
-        <div className='w-1/5 h-20 text-center'>Lorem</div>
+        <div className='w-1/5 h-20 text-center+'>Lorem</div>
         <div className='w-1/5 h-20 text-center'>Copyright©</div>
     </div>
     </div>
