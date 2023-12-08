@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import IProduct from "@/interface/IProductCard";
+import IProduct from "@/utils/interface/IProductCard";
 
 
 

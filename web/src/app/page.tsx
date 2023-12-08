@@ -1,6 +1,6 @@
 import Link from "next/link";
 import ProductCard from "../components/ProductCard/productCard";
-import IProduct from "@/interface/IProductCard";
+import IProduct from "@/utils/interface/IProductCard";
 
 export default async function Home() {
 
