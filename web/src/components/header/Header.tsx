@@ -8,13 +8,13 @@ export default function Home() {
         <nav>
           <ul className=" flex justify-between gap-16">
             <li className="hover:text-green-900">
-              <Link href={"/"}>Produkter</Link>
+              <Link href={"/products"}>Produkter</Link>
             </li>
             <li className="hover:text-green-900">
-              <Link href={"/"}>Kontakt</Link>
+              <Link href={"/contact"}>Kontakt</Link>
             </li>
             <li className="hover:text-green-900">
-              <Link href={"/"}>Admin</Link>
+              <Link href={"/admin"}>Admin</Link>
             </li>
           </ul>
         </nav>
