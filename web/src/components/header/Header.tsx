@@ -22,6 +22,7 @@ export default function Home() {
             </li>
             <li className="hover:text-green-900">
               <Link href={"/"}>Kontakt</Link>
+              
             </li>
             <li className="hover:text-green-900">
               <Link href={"/"}>Admin</Link>
