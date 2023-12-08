@@ -1,5 +1,4 @@
 {
-  ],
   "products": [
     {
       "id": 1,
@@ -8,6 +7,7 @@
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild1",
       "category": "stekpanna",
+      "storage": 15,
       "price": 299
     },
     {
@@ -17,6 +17,7 @@
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild2",
       "category": "stekpanna",
+      "storage": 15,
       "price": 399
     },
     {
@@ -26,6 +27,7 @@
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild3",
       "category": "stekpanna",
+      "storage": 15,
       "price": 199
     },
     {
@@ -35,6 +37,7 @@
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild4",
       "category": "stekpanna",
+      "storage": 15,
       "price": 199
     },
     {
@@ -44,6 +47,7 @@
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild5",
       "category": "stekpanna",
+      "storage": 15,
       "price": 199
     },
     {
@@ -53,6 +57,7 @@
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild6",
       "category": "stekpanna",
+      "storage": 15,
       "price": 199
     },
     {
@@ -62,6 +67,7 @@
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild7",
       "category": "stekpanna",
+      "storage": 15,
       "price": 499
     }
   ],

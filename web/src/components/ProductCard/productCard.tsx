@@ -1,16 +1,8 @@
 import Image from 'next/image'
 import React from 'react'
+import IProduct from "@/utils/interface/IProductCard";
 
 
-interface IProduct {
-  id: string;
-  title: string;
-  description: string;
-  category: string;
-  img: string;
-  imgAlt: string;
-  price: number;
-}
 
 function ProductCard({ product }: { product: IProduct }) {
   return (
