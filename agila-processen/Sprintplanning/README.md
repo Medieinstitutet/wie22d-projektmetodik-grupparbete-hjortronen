@@ -2,6 +2,7 @@
 
 ## 1. Tillgänglighet - Ska någon vara borta o.s.v. 
 Martin behöver vara borta på Onsdag förmiddag. 
+Jonas behöver vara ledig Tisdag eftermiddag.
 
 ## 2. Velocity - Hastighet
 Efter förra sprinten insåg gruppen att vi var betydligt snabbare än vad vi först trodde. 
