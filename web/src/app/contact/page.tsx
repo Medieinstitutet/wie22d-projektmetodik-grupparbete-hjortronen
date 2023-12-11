@@ -1,13 +1,7 @@
-// import React from "react";
-
-// export default function contact() {
-//   return <div>contact page</div>;
-// }
-
 "use client";
 
 import React from "react";
-import { Button, Form, Input, ConfigProvider, theme } from "antd";
+import { Button, Form, Input } from "antd";
 
 const layout = {
   labelCol: { span: 24 },
@@ -57,7 +51,10 @@ const App: React.FC = () => (
           >
             <Input />
           </Form.Item>
-          <Form.Item name={["user", "email"]} label="Ordernummer (valfritt)">
+          <Form.Item
+            name={["user", "Ordernummer"]}
+            label="Ordernummer (valfritt)"
+          >
             <Input />
           </Form.Item>
           <Form.Item

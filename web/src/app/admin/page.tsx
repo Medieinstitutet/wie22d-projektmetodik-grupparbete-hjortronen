@@ -23,7 +23,7 @@ export default function Admin() {
 
   const handleAddProduct = async (newProduct: IProduct) => {
     try {
-      const response = await fetch("http://localhost:5000/products", {
+      const response = await fetch("http://localhost:3000/products", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -64,34 +64,32 @@ export default function Admin() {
     setPrice("");
   };
 
-
   const links = [
-    { label : 'Customers', href: '#'},
-    { label : 'Orders', href: '#' },
-    { label : 'Analythics', href: '#' },
-    { label : 'Marketing', href: '#' },
-    { label : 'Products', href: '#' },
-    { label : 'Online store', href: '#' },
-  ]
-
+    { label: "Customers", href: "#" },
+    { label: "Orders", href: "#" },
+    { label: "Analythics", href: "#" },
+    { label: "Marketing", href: "#" },
+    { label: "Products", href: "#" },
+    { label: "Online store", href: "#" },
+  ];
 
   return (
     <main className="flex h-screen">
       <div className="w-1/4 h-full bg-slate-500 flex">
         <nav className="m-auto">
           <ul className="border border-black rounded-lg">
-            {links.map((link => 
-              <Link href={link.href}
-              className="hover:text-xl">
-            <li className="m-4">
-              {link.label}
-              </li></Link>))}
+            {links.map((link) => (
+              <Link href={link.href} className="hover:text-xl">
+                <li className="m-4">{link.label}</li>
+              </Link>
+            ))}
           </ul>
         </nav>
       </div>
-      <div className="flex justify-center items-center bg-red-400 w-3/4 h-full">
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
+      <div className="flex justify-center items-center flex-col bg-red-400 w-3/4 h-full">
+        <h1 className="mb-6">Add products</h1>
+        <form onSubmit={handleSubmit} className="w-1/2">
+          <div className="mb-4 flex-col flex">
             <label htmlFor="title">Product title:</label>
             <input
               type="text"
@@ -101,7 +99,7 @@ export default function Admin() {
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-4 flex-col flex">
             <label htmlFor="description">Product description:</label>
             <input
               type="text"
@@ -111,17 +109,21 @@ export default function Admin() {
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-4 flex-col flex">
             <label htmlFor="category">Product category:</label>
-            <input
-              type="text"
+            <select
+              name="category"
               id="category"
-              value={category}
               onChange={(e) => setCategory(e.target.value)}
-            />
+            >
+              <option value="knivar">Knivar</option>
+              <option value="Skärbrädor">Skärbrädor</option>
+              <option value="Stekpannor">Stekpannor</option>
+              <option value="Kastruler">Kastruler</option>
+            </select>
           </div>
 
-          <div className="mb-4">
+          <div className="mb-4 flex-col flex">
             <label htmlFor="storage">Product storage:</label>
             <input
               type="text"
@@ -131,7 +133,7 @@ export default function Admin() {
             />
           </div>
 
-          <div className="mb-4">
+          <div className="mb-4 flex-col flex">
             <label htmlFor="price">Product price:</label>
             <input
               type="text"
