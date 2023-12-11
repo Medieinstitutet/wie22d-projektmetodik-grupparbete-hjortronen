@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 interface IProduct {
@@ -62,20 +63,29 @@ export default function Admin() {
     setStorage("");
     setPrice("");
   };
+
+
+  const links = [
+    { label : 'Customers', href: '#'},
+    { label : 'Orders', href: '#' },
+    { label : 'Analythics', href: '#' },
+    { label : 'Marketing', href: '#' },
+    { label : 'Products', href: '#' },
+    { label : 'Online store', href: '#' },
+  ]
+
+
   return (
     <main className="flex h-screen">
       <div className="w-1/4 h-full bg-slate-500 flex">
         <nav className="m-auto">
-          <ul>
-            <li>
-              <a href="#">Dummy</a>
-            </li>
-            <li>
-              <a href="#">Dummy</a>
-            </li>
-            <li>
-              <a href="#">Dummy</a>
-            </li>
+          <ul className="border border-black rounded-lg">
+            {links.map((link => 
+              <Link href={link.href}
+              className="hover:text-xl">
+            <li className="m-4">
+              {link.label}
+              </li></Link>))}
           </ul>
         </nav>
       </div>
