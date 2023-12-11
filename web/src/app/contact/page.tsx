@@ -33,7 +33,7 @@ const onFinish = (values: any) => {
 
 const App: React.FC = () => (
   <>
-    <div className="flex justify-center mt-32 h-screen">
+    <div className="flex justify-center pt-16 h-screen">
       <div className="w-96">
         <h1 className="mb-4 flex justify-center">Kontakta oss</h1>
         <Form
@@ -57,9 +57,11 @@ const App: React.FC = () => (
           >
             <Input />
           </Form.Item>
-
+          <Form.Item name={["user", "email"]} label="Ordernummer (valfritt)">
+            <Input />
+          </Form.Item>
           <Form.Item
-            name={["user", "introduction"]}
+            name={["user", "message"]}
             label="Meddelande"
             rules={[{ required: true }]}
           >
