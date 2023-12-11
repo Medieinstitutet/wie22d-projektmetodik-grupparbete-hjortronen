@@ -62,3 +62,19 @@ För VG:
 * Vid problem lyfter ni upp detta proaktivt.
 * Ni tacklar oväntade problem som dyker upp enligt principerna för det agila arbetssättet.
 * Ni gör commits enligt en enhetlig standard, t.ex. conventional commits eller gitmoji.
+
+## Instruktioner för att starta upp den lokala json-servern
+1. Ställ dig i projektets rotmapp 
+2. Kör följande kommande i din terminal
+
+    ```basch
+     npm install
+     ```
+
+3. Kör därefter följande kommando i din terminal
+
+     ```bash
+     json-server --watch ./db/productDB.json 
+     ```
+
+
