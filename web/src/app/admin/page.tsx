@@ -86,12 +86,16 @@ export default function Admin() {
           </ul>
         </nav>
       </div>
-      <div className="flex justify-center items-center flex-col bg-red-400 w-3/4 h-full">
-        <h1 className="mb-6">Add products</h1>
+      <div className="flex justify-center items-center flex-col bg-gray-900 w-3/4 h-full">
+        <h1 className="mb-6 text-white">Add product</h1>
         <form onSubmit={handleSubmit} className="w-1/2">
           <div className="mb-4 flex-col flex">
-            <label htmlFor="title">Product title:</label>
+            <label htmlFor="title" className="text-white">
+              Product title:
+            </label>
             <input
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Stekpanna"
               type="text"
               id="title"
               value={title}
@@ -100,8 +104,12 @@ export default function Admin() {
           </div>
 
           <div className="mb-4 flex-col flex">
-            <label htmlFor="description">Product description:</label>
+            <label htmlFor="description" className="text-white">
+              Product description:
+            </label>
             <input
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="En stryktålig Stekpanna..."
               type="text"
               id="description"
               value={description}
@@ -110,22 +118,29 @@ export default function Admin() {
           </div>
 
           <div className="mb-4 flex-col flex">
-            <label htmlFor="category">Product category:</label>
+            <label htmlFor="category" className="text-white">
+              Product category:
+            </label>
             <select
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               name="category"
               id="category"
               onChange={(e) => setCategory(e.target.value)}
             >
+              <option value="Stekpannor">Stekpannor</option>
               <option value="knivar">Knivar</option>
               <option value="Skärbrädor">Skärbrädor</option>
-              <option value="Stekpannor">Stekpannor</option>
               <option value="Kastruler">Kastruler</option>
             </select>
           </div>
 
           <div className="mb-4 flex-col flex">
-            <label htmlFor="storage">Product storage:</label>
+            <label htmlFor="storage" className="text-white">
+              Product storage:
+            </label>
             <input
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="123"
               type="text"
               id="storage"
               value={storage}
@@ -134,15 +149,19 @@ export default function Admin() {
           </div>
 
           <div className="mb-4 flex-col flex">
-            <label htmlFor="price">Product price:</label>
+            <label htmlFor="price" className="text-white">
+              Product price:
+            </label>
             <input
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="123"
               type="text"
               id="price"
               value={price}
               onChange={(e) => setPrice(e.target.value)}
             />
           </div>
-          <button type="submit" className="bg-slate-50">
+          <button type="submit" className="bg-slate-50 float-right">
             Add Product
           </button>
         </form>
