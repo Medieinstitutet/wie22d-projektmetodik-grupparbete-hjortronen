@@ -6,7 +6,7 @@
       "description": "En riktigt fin stekpanna",
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild1",
-      "category": "stekpanna",
+      "category": "pans",
       "storage": 15,
       "price": 299
     },
@@ -16,7 +16,7 @@
       "description": "En jättefin stekpanna med teflonbeläggning",
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild2",
-      "category": "stekpanna",
+      "category": "pans",
       "storage": 15,
       "price": 399
     },
@@ -26,7 +26,7 @@
       "description": "En riktigt fin stekpanna",
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild3",
-      "category": "stekpanna",
+      "category": "pans",
       "storage": 15,
       "price": 199
     },
@@ -36,7 +36,7 @@
       "description": "En riktigt fin stekpanna",
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild4",
-      "category": "stekpanna",
+      "category": "pans",
       "storage": 15,
       "price": 199
     },
@@ -46,7 +46,7 @@
       "description": "En riktigt fin stekpanna",
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild5",
-      "category": "stekpanna",
+      "category": "pans",
       "storage": 15,
       "price": 199
     },
@@ -56,7 +56,7 @@
       "description": "En riktigt fin stekpanna",
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild6",
-      "category": "stekpanna",
+      "category": "pans",
       "storage": 15,
       "price": 199
     },
@@ -66,9 +66,29 @@
       "description": "En jättefin stekpanna med teflonbeläggning",
       "img": "/placeholder-image.png",
       "imgAlt": "Detta är en bild7",
-      "category": "stekpanna",
+      "category": "pans",
       "storage": 15,
       "price": 499
+    },
+    {
+      "id": 1702380934941,
+      "title": "Skärbrädan \"Sören\"",
+      "description": "Superfin skärbräda",
+      "category": "boards",
+      "storage": 4,
+      "img": "/placeholder-image.png",
+      "imgAlt": "product image",
+      "price": 199
+    },
+    {
+      "id": 1702381846877,
+      "title": "Skärbrädan \"Kalle\"",
+      "description": "Skärbräda i stryktålig marmor",
+      "category": "boards",
+      "storage": 5,
+      "img": "/placeholder-image.png",
+      "imgAlt": "product image",
+      "price": 295
     }
   ],
   "comments": [

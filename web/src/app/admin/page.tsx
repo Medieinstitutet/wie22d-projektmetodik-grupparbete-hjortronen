@@ -50,7 +50,7 @@ export default function Admin() {
       description,
       category,
       storage: parseFloat(storage),
-      img: "default-image.jpg",
+      img: "/placeholder-image.png",
       imgAlt: "product image",
       price: parseFloat(price),
     };
@@ -79,6 +79,7 @@ export default function Admin() {
         <nav className="m-auto">
           <ul className="border border-black rounded-lg">
             {links.map((link) => (
+              // eslint-disable-next-line react/jsx-key
               <Link href={link.href} className="hover:text-xl">
                 <li className="m-4">{link.label}</li>
               </Link>
@@ -130,10 +131,10 @@ export default function Admin() {
               <option value="" disabled selected>
                 Välj kategori
               </option>
-              <option value="Stekpannor">Stekpannor</option>
-              <option value="knivar">Knivar</option>
-              <option value="Skärbrädor">Skärbrädor</option>
-              <option value="Kastruler">Kastruler</option>
+              <option value="pans">Stekpannor</option>
+              <option value="knives">Knivar</option>
+              <option value="boards">Skärbrädor</option>
+              <option value="pots">Kastruler</option>
             </select>
           </div>
 
