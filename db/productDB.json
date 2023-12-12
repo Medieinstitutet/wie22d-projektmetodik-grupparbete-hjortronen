@@ -89,6 +89,26 @@
       "img": "/placeholder-image.png",
       "imgAlt": "product image",
       "price": 295
+    },
+    {
+      "id": 1702404713440,
+      "title": "Stekpanna",
+      "description": "En fantastisk stekpanna",
+      "category": "pans",
+      "storage": 2,
+      "img": "/placeholder-image.png",
+      "imgAlt": "product image",
+      "price": 299
+    },
+    {
+      "id": 1702404999637,
+      "title": "Skärbräda",
+      "description": "En gedigen skärbräda",
+      "category": "boards",
+      "storage": 5,
+      "img": "/placeholder-image.png",
+      "imgAlt": "product image",
+      "price": 99
     }
   ],
   "comments": [
