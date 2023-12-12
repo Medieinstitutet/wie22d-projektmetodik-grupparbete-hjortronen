@@ -15,7 +15,7 @@ function ProductCard({ product }: { product: IProduct }) {
             alt={product.imgAlt}
         />
         <p className="text-center p-5">{product.description}</p>
-        <p className="text-center mt-1 ">{product.price}</p>
+        <p className="text-center mt-1 ">{product.price}:-</p>
         <div className='flex justify-end align-bottom'>
           
           <button className="m-1 border-solid border-2 border-sky-500">Köp</button>
