@@ -28,7 +28,7 @@ export default async function Product({ params }: { params: ProductParams }) {
           <h3 className="mt-5 flex justify-center">{product.title}</h3>
           <Image
             src={product.img}
-            width={500}
+            width={666}
             height={500}
             alt={product.imgAlt}
           />
