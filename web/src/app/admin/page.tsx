@@ -78,9 +78,9 @@ export default function Admin() {
       <div className="w-1/4 h-full bg-slate-500 flex">
         <nav className="m-auto">
           <ul className="border border-black rounded-lg">
-            {links.map((link) => (
+            {links.map((link, idx) => (
               // eslint-disable-next-line react/jsx-key
-              <Link href={link.href} className="hover:text-xl">
+              <Link key={idx} href={link.href} className="hover:text-xl">
                 <li className="m-4">{link.label}</li>
               </Link>
             ))}
@@ -127,8 +127,9 @@ export default function Admin() {
               name="category"
               id="category"
               onChange={(e) => setCategory(e.target.value)}
+              value={category}
             >
-              <option value="" disabled selected>
+              <option >
                 Välj kategori
               </option>
               <option value="pans">Stekpannor</option>
