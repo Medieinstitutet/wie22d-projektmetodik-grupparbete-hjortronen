@@ -1,23 +1,56 @@
 import React from 'react'
 import Link from 'next/link'
 
+const listItems = [
+  { name: 'Kontakta Oss/FAQ' },
+  { name: 'Orderstatus' },
+  { name: 'Leveranstider jul' },
+  { name: 'Presentkort' },
+  { name: 'Frakt & leverans' },
+  { name: 'Betalningsalternativ' },
+  { name: 'Köpvillkor' },
+  { name: 'Kampanjvillkor' },
+  { name: 'Företag' },
+]
+
 const Footer = () => {
   return (
     <>
-    <div className='h-32 flex justify-between flex-row-reverse shadow-lg'>
-        <div className='w-1/3 flex items-center justify-center'>
-            <button className='bg-green-200 hover:text-green-900 px-3 rounded-full'>
-        <Link href={'/admin'} className=''>Admin</Link>
-            </button>
-    </div>
-    <div className='py-2 w-2/3 flex justify-around flex-wrap'>
-        <div className='w-1/5 h-20 text-center'>Lorem</div>
-        <div className='w-1/5 h-20 text-center'>Lorem</div>
-        <div className='w-1/5 h-20 text-center'>Lorem</div>
-        <div className='w-1/5 h-20 text-center'>Lorem</div>
-        <div className='w-1/5 h-20 text-center+'>Lorem</div>
-        <div className='w-1/5 h-20 text-center'>Copyright©</div>
-    </div>
+    <div className='h-60 flex justify-between shadow-lg bg-custom-400 text-white text-center pt-2'>  
+        <div className='w-1/4 h-20'>
+          <h1 className='text-xl font-bold pb-3'>KONTAKT</h1>
+          <ul className='text-xs'>
+            {listItems.map((listItem, idx) => (
+              <li key={idx}>
+                {listItem.name}
+              </li>
+            ))}
+          </ul>
+          </div>  
+        <div className='w-1/4 h-20'>
+          <h1 className='text-xl font-bold pb-3'>ÖPPETTIDER</h1>
+          <ul className='text-xs'>
+            {listItems.map((listItem, idx) => (
+              <li key={idx}>
+                {listItem.name}
+              </li>
+            ))}
+          </ul>
+          </div>  
+        <div className='w-1/4 h-20'>
+          <h1 className='text-xl font-bold pb-3'>OM OSS</h1>
+          <ul className='text-xs'>
+            {listItems.map((listItem, idx) => (
+              <li key={idx}>
+                {listItem.name}
+              </li>
+            ))}
+          </ul>
+          </div>  
+        <div className='w-1/4 h-20'>
+          <Link href={'/admin'}><h1 className='text-xl font-bold'>ADMIN</h1></Link>
+          </div>  
+        
     </div>
     </>
   )
