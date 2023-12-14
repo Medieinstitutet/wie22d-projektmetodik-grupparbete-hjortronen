@@ -20,6 +20,7 @@ export default function Admin() {
   const [category, setCategory] = useState("");
   const [storage, setStorage] = useState("");
   const [price, setPrice] = useState("");
+  const [img, setImg] = useState("")
 
   const handleAddProduct = async (newProduct: IProduct) => {
     try {
@@ -50,7 +51,7 @@ export default function Admin() {
       description,
       category,
       storage: parseFloat(storage),
-      img: "/placeholder-image.png",
+      img,
       imgAlt: "product image",
       price: parseFloat(price),
     };
@@ -62,6 +63,7 @@ export default function Admin() {
     setCategory("");
     setStorage("");
     setPrice("");
+    setImg("")
   };
 
   const links = [
@@ -94,7 +96,7 @@ export default function Admin() {
         <form onSubmit={handleSubmit} className="w-1/2">
           <div className="mb-4 flex-col flex">
             <label htmlFor="title" className="text-white">
-              Produkt title:
+              Produkt titel:
             </label>
             <input
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -108,7 +110,7 @@ export default function Admin() {
 
           <div className="mb-4 flex-col flex">
             <label htmlFor="description" className="text-white">
-              Produkt Beskrivning:
+              Produkt beskrivning:
             </label>
             <input
               className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
@@ -117,6 +119,19 @@ export default function Admin() {
               id="description"
               value={description}
               onChange={(e) => setDescription(e.target.value)}
+            />
+          </div>
+          <div className="mb-4 flex-col flex">
+            <label htmlFor="description" className="text-white">
+              Produkt bild:
+            </label>
+            <input
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Bild URL här"
+              type="text"
+              id="img"
+              value={img}
+              onChange={(e) => setImg(e.target.value)}
             />
           </div>
 
