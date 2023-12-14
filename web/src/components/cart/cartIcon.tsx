@@ -6,9 +6,9 @@ const CartIcon = () => {
   const { products } = useProductContext();
   const totalItemsInProducts = products.length || 0;
   return (
-    <div>
+    <div className="flex">
       <FaOpencart size={25} />
-      <span>{totalItemsInProducts}</span>
+      <span className="ml-4">{totalItemsInProducts}</span>
     </div>
   );
 };
