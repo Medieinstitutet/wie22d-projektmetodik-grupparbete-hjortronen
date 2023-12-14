@@ -13,19 +13,19 @@ export default function Home() {
           <div className="flex justify-center items-center">
             <Image alt="Our logotype" src={logo} className="h-20 w-20" />
             <p className="text-xl uppercase">
-              ottima<span className="text-custom-400">cucina</span>
+              ottima<span className="text-custom-500">cucina</span>
             </p>
           </div>
         </Link>
         <nav>
           <ul className=" flex justify-between gap-16">
-            <li className="hover:text-black">
+            <li className="hover:text-custom-500">
               <Link href={"/products"}>Produkter</Link>
             </li>
-            <li className="hover:text-black">
+            <li className="hover:text-custom-500">
               <Link href={"/contact"}>Kontakt</Link>
             </li>
-            <li className="hover:text-black">
+            <li className="hover:text-custom-500">
               <Link href={"/admin"}>Admin</Link>
             </li>
           </ul>
