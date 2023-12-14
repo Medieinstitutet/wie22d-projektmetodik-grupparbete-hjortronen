@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import AddToCartButton from "../../../components/AddToCartButton/AddToCartButton";
 
 type ProductParams = {
@@ -22,9 +23,7 @@ export default async function Product({ params }: { params: ProductParams }) {
     <>
       <div className="m-10 w-2/4 flex justify-center border">
         <div key={product.id}>
-          <button className="m-1 border-solid border-2 border-sky-500">
-            {"<- Tillbaka"}
-          </button>
+        <Link className="mt-5 border-solid border-2 p-1 border-sky-500" href={"/"}>Tillbaka</Link>
           <h3 className="mt-5 flex justify-center">{product.title}</h3>
           <Image
             src={product.img}
