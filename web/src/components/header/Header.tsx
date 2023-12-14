@@ -19,14 +19,21 @@ export default function Home() {
         </Link>
         <nav>
           <ul className=" flex justify-between gap-16">
-            <li className="hover:text-custom-500">
+
+            <li className="hover:text-black">
+              <Link href={"/"}>Hem</Link>
+            </li>
+            <li className="hover:text-black">
               <Link href={"/products"}>Produkter</Link>
+      
             </li>
             <li className="hover:text-custom-500">
               <Link href={"/contact"}>Kontakt</Link>
             </li>
-            <li className="hover:text-custom-500">
-              <Link href={"/admin"}>Admin</Link>
+
+            <li className="hover:text-black">
+              <Link href={"#"}>Om Oss</Link>
+
             </li>
           </ul>
         </nav>
