@@ -21,17 +21,32 @@ export default async function Home() {
             <h1 className="absolute text-5xl text-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
               Årets Julklapp
             </h1>
-            <Image src={karusell1} width={2000} alt="Jul kampanj" className="w-full"/>
+            <Image
+              src={karusell1}
+              width={2000}
+              alt="Jul kampanj"
+              className="w-full"
+            />
           </div>
         </Link>
         <Link href={"/products"}>
           <div>
-            <Image src={karusell2} width={2000} alt="Jul kampanj" className="w-full "/>
+            <Image
+              src={karusell2}
+              width={2000}
+              alt="Jul kampanj"
+              className="w-full "
+            />
           </div>
         </Link>
         <Link href={"/products"}>
           <div>
-            <Image src={karusell3} width={2000} height={2000} alt="Jul kampanj" className="w-full"/>
+            <Image
+              src={karusell3}
+              width={2000}
+              alt="Jul kampanj"
+              className="w-full"
+            />
           </div>
         </Link>
       </Carousel>
