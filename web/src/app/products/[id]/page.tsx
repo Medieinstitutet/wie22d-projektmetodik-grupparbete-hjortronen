@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import AddToCartButton from "../../../components/AddToCartButton/AddToCartButton";
+import Button from "@/components/button/button";
 
 type ProductParams = {
   id: string;
@@ -22,9 +24,7 @@ export default async function Product({ params }: { params: ProductParams }) {
     <>
       <div className="m-10 w-2/4 flex justify-center border">
         <div key={product.id}>
-          <button className="m-1 border-solid border-2 border-sky-500">
-            {"<- Tillbaka"}
-          </button>
+        <Button><Link href={"/"}>Tillbaka</Link></Button>
           <h3 className="mt-5 flex justify-center">{product.title}</h3>
           <Image
             src={product.img}
@@ -35,7 +35,7 @@ export default async function Product({ params }: { params: ProductParams }) {
           <p>{product.description}</p>
           <p className="font-bold mt-5">{product.price}:-</p>
           <p className="mt-5">Antal i lager: {product.storage}</p>
-          <AddToCartButton product={product} />
+          <Button><AddToCartButton product={product} /></Button>
         </div>
       </div>
     </>

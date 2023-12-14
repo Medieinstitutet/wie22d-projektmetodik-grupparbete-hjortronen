@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import IProduct from "@/utils/interface/IProductCard";
+import AddToCartButton from "../../components/AddToCartButton/AddToCartButton";
 import Button from "../button/button";
 
 function ProductCard({ product }: { product: IProduct }) {
@@ -19,7 +20,7 @@ function ProductCard({ product }: { product: IProduct }) {
         </div>
         <div className="flex justify-between ">
           <p className="pl-1 text-xl">{product.price}:-</p>
-          <Button variant="default">Köp</Button>
+          <Button><AddToCartButton product={product} /></Button>
         </div>
       </div>
     </div>

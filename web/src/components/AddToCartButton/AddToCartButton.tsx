@@ -17,9 +17,8 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({ product }) => {
   return (
     <button
       onClick={addToCartHandler}
-      className="m-1 border-solid border-2 border-sky-500"
     >
-      Lägg till i varukorgen
+      Köp nu
     </button>
   );
 };
