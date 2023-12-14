@@ -31,7 +31,7 @@ export default async function Home() {
         </Link>
         <Link href={"/products"}>
           <div>
-            <Image src={karusell3} width={2000} height={2000} alt="Jul kampanj" className="w-full"/>
+            <Image src={karusell3} width={2000} alt="Jul kampanj" className="w-full"/>
           </div>
         </Link>
       </Carousel>
