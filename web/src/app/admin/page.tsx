@@ -75,19 +75,21 @@ export default function Admin() {
 
   return (
     <main className="flex h-screen">
-      <div className="w-1/4 h-full bg-slate-500 flex">
-        <nav className="m-auto">
-          <ul className="border border-black rounded-lg">
+      <div className="w-1/4 bg-slate-900 ">
+        <nav className="flex-col">
+          <ul className=" border border-slate-900 bg-slate-900 rounded-lg flex-col m-auto">
             {links.map((link, idx) => (
               // eslint-disable-next-line react/jsx-key
-              <Link key={idx} href={link.href} className="hover:text-xl">
-                <li className="m-4">{link.label}</li>
+              <Link key={idx} href={link.href}>
+                <li className="m-10 h-16 flex justify-center items-center text-white bg-slate-800 rounded-md hover:bg-gray-600">
+                  {link.label}
+                </li>
               </Link>
             ))}
           </ul>
         </nav>
       </div>
-      <div className="flex justify-center items-center flex-col bg-gray-900 w-3/4 h-full">
+      <div className="flex justify-center items-center flex-col bg-slate-800 w-3/4 h-full">
         <h1 className="mb-6 text-white">Lägg till produkt</h1>
         <form onSubmit={handleSubmit} className="w-1/2">
           <div className="mb-4 flex-col flex">
@@ -129,9 +131,7 @@ export default function Admin() {
               onChange={(e) => setCategory(e.target.value)}
               value={category}
             >
-              <option >
-                Välj kategori
-              </option>
+              <option>Välj kategori</option>
               <option value="pans">Stekpannor</option>
               <option value="knives">Knivar</option>
               <option value="boards">Skärbrädor</option>
