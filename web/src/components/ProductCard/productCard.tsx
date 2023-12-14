@@ -17,7 +17,7 @@ function ProductCard({ product }: { product: IProduct }) {
           <h1 className="text-2xl">{product.title}</h1>
         </div>
         <div className="flex justify-between ">
-          <p className="text-xl">{product.price}:-</p>
+          <p className="pl-1 text-xl">{product.price}:-</p>
           <button className="m-1 border-solid border-2 border-sky-500">
             Köp
           </button>
