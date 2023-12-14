@@ -36,8 +36,7 @@ export default async function Home() {
         </Link>
       </Carousel>
 
-      <h1>Startpage</h1>
-      <div className="flex flex-wrap w-3/4">
+      <div className="flex flex-wrap w-screen justify-center">
         {products.map((product: IProduct) => (
           <div className="ProductCardRender" key={product.id}>
             <Link href={`/products/${product.id}`}>

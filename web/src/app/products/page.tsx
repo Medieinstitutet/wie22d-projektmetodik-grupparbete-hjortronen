@@ -15,7 +15,7 @@ export default async function products() {
     <>
       <p>Productspage</p>
 
-      <div className="flex flex-wrap w-3/4">
+      <div className="flex flex-wrap w-screen justify-center">
         {products.map((product: IProduct) => (
           <div className="ProductCardRender" key={product.id}>
             <Link href={`/products/${product.id}`}>
