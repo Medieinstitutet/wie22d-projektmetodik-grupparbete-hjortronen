@@ -3,7 +3,6 @@ import React from "react";
 import IProduct from "@/utils/interface/IProductCard";
 import Button from "../button/button";
 
-
 function ProductCard({ product }: { product: IProduct }) {
   return (
     <div className=" borde w-80 m-10 h-96 rounded-xl shadow-[3px_6px_11px_6px_#00000024] ">
@@ -21,10 +20,7 @@ function ProductCard({ product }: { product: IProduct }) {
         <div className="flex justify-between ">
           <p className="pl-1 text-xl">{product.price}:-</p>
           <Button variant="default">Köp</Button>
-            Köp
-          </button>
         </div>
-
       </div>
     </div>
   );
