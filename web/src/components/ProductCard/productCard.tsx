@@ -1,6 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import IProduct from "@/utils/interface/IProductCard";
+import Button from "../button/button";
+
 
 function ProductCard({ product }: { product: IProduct }) {
   return (
@@ -18,10 +20,11 @@ function ProductCard({ product }: { product: IProduct }) {
         </div>
         <div className="flex justify-between ">
           <p className="pl-1 text-xl">{product.price}:-</p>
-          <button className="m-1 border-solid border-2 border-sky-500">
+          <Button variant="default">Köp</Button>
             Köp
           </button>
         </div>
+
       </div>
     </div>
   );
