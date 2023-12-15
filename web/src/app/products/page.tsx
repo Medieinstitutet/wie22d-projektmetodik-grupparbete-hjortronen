@@ -10,7 +10,6 @@ export default async function products() {
     cache: "no-store",
   });
   const products = await res.json();
-  console.log(products);
 
   return (
     <>

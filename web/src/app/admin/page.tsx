@@ -32,11 +32,10 @@ export default function Admin() {
         body: JSON.stringify(newProduct),
       });
 
-      if (response.ok) {
-        console.log("New Product added: ", newProduct);
-      } else {
+      if (!response.ok) {
         console.error("Failed to add new product: ", response.statusText);
-      }
+        
+      } 
     } catch (error) {
       console.log("Error:", error);
     }

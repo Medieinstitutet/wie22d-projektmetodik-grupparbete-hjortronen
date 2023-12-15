@@ -9,12 +9,9 @@ interface IProps {
 
 const ProductContextProvider = ({ children }: IProps) => {
   const [products, setProducts] = useState<IProduct[]>([]);
-  console.log("logging products before addProduct :", products);
   const addProduct = (product: IProduct) => {
-    console.log("Adding product:", product); // Log to check if the function is called
     setProducts([...products, product]);
-    console.log("Updated products:", products.length); // Log to check the updated state
-  };
+    };
 
   return (
     <ProductContext.Provider value={{ products, addProduct }}>

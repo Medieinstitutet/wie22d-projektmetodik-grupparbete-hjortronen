@@ -33,7 +33,6 @@ const AddToCartButton: React.FC<AddToCartButtonProps> = ({
 }) => {
   const { addProduct, products } = useProductContext();
   const addToCartHandler = () => {
-    console.log("button is clicked");
     addProduct(product);
   };
 
