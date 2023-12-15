@@ -22,25 +22,29 @@ export default async function Product({ params }: { params: ProductParams }) {
 
   return (
     <>
-      <div className="m-10 w-2/4 flex justify-center border">
-        <div key={product.id}>
+      <div className="flex">
+        <div key={product.id} className=" w-2/4 border m-10 rounded-xl shadow-[3px_6px_11px_6px_#00000024]">
           <Button>
             <Link href={"/"}>Tillbaka</Link>
           </Button>
-          <h3 className="mt-5 flex justify-center">{product.title}</h3>
+          
           <Image
             src={product.img}
             width={666}
             height={500}
             alt={product.imgAlt}
           />
+        </div>
+        <div className="w-2/4 flex flex-col justify-around pl-4">
+        <h2 className="text-3xl font-bold">{product.title}</h2>
           <p>{product.description}</p>
-          <p className="font-bold mt-5">{product.price}:-</p>
-          <p className="mt-5">Antal i lager: {product.storage}</p>
+          <div className="flex">
+          <h2 className=" text-3xl font-bold  mr-28">{product.price}:-</h2>
           <AddToCartButton product={product} variant="default">
             Lägg i varukorg
           </AddToCartButton>
-        </div>
+          </div>
+          </div>
       </div>
     </>
   );
