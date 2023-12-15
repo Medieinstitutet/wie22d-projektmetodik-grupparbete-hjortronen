@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        roboto: ["Regular-400-Italic"],
+      },
       colors: {
         custom: {
           100: "#ECE3CE",
