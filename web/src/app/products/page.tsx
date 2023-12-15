@@ -1,5 +1,5 @@
 import React from "react";
-
+import ProductCategories from "../../components/ProductCategories/productCategories"
 import ProductCard from "../../components/ProductCard/productCard";
 import IProduct from "@/utils/interface/IProductCard";
 import Link from "next/link";
@@ -14,46 +14,7 @@ export default async function products() {
 
   return (
     <>
-      <div className="flex justify-center w-screen ">
-        <nav className="bg-custom-400  m-5 p-5">
-          <ul className="flex justify-center gap-4 text-white ">
-            <li>
-              <Button variant="primary">
-                <Link
-                  className="hover:text-custom-500"
-                  href={"/products/boards"}
-                >
-                  Skärbrädor
-                </Link>
-              </Button>
-            </li>
-            <li>
-              <Button variant="primary">
-                <Link
-                  className="hover:text-custom-500"
-                  href={"/products/knives"}
-                >
-                  Knivar
-                </Link>
-              </Button>
-            </li>
-            <li>
-              <Button variant="primary">
-                <Link className="hover:text-custom-500" href={"/products/pans"}>
-                  Stekpannor
-                </Link>
-              </Button>
-            </li>
-            <li>
-              <Button variant="primary">
-                <Link className="hover:text-custom-500" href={"/products/pots"}>
-                  Kastruller
-                </Link>
-              </Button>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <ProductCategories />
 
       <div className="flex flex-wrap w-screen justify-center">
         {products.map((product: IProduct) => (

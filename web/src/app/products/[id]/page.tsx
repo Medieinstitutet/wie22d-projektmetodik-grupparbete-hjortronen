@@ -45,3 +45,4 @@ export default async function Product({ params }: { params: ProductParams }) {
     </>
   );
 }
+
