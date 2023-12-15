@@ -48,7 +48,7 @@ const Footer = () => {
           </ul>
           </div>  
         <div className='w-1/4 h-20'>
-          <Link href={'/admin'}><h1 className='text-xl font-bold'>ADMIN</h1></Link>
+          <Link href={'/admin'}><h1 className='text-xl font-bold hover:text-custom-500'>ADMIN</h1></Link>
           </div>  
         
     </div>
