@@ -34,7 +34,7 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-        <div className="flex gap-2 w-60 justify-end">
+        <div className="flex gap-2 w-60 justify-center">
           <LiaUserSolid size={25} className="hover:text-custom-500" />
           <CartIcon />
         </div>
