@@ -8,45 +8,39 @@ import Link from "next/link";
 function ProductCategories() {
   return (
     <div className="flex justify-center w-screen ">
-    <nav className="bg-custom-400  m-5 p-5">
-      <ul className="flex justify-center gap-4 text-white ">
-        <li>
-          <Button variant="primary">
-            <Link
-              className="hover:text-custom-500"
-              href={"/products/boards"}
-            >
-              Skärbrädor
+      <nav className="bg-custom-400  m-5 p-5 rounded-md">
+        <ul className="flex justify-center gap-4 text-white ">
+          <li>
+            <Link href={"/products/pots"}>
+              <Button className="hover:text-custom-500" variant="primary">
+                Skärbrädor
+              </Button>
             </Link>
-          </Button>
-        </li>
-        <li>
-          <Button variant="primary">
-            <Link
-              className="hover:text-custom-500"
-              href={"/products/knives"}
-            >
-              Knivar
+          </li>
+          <li>
+            <Link href={"/products/pots"}>
+              <Button className="hover:text-custom-500" variant="primary">
+                Knivar
+              </Button>
             </Link>
-          </Button>
-        </li>
-        <li>
-          <Button variant="primary">
-            <Link className="hover:text-custom-500" href={"/products/pans"}>
-              Stekpannor
+          </li>
+          <li>
+            <Link href={"/products/pots"}>
+              <Button className="hover:text-custom-500" variant="primary">
+                Stekpannor
+              </Button>
             </Link>
-          </Button>
-        </li>
-        <li>
-          <Button variant="primary">
-            <Link className="hover:text-custom-500" href={"/products/pots"}>
-              Kastruller
+          </li>
+          <li>
+            <Link href={"/products/pots"}>
+              <Button className="hover:text-custom-500" variant="primary">
+                Kastruller
+              </Button>
             </Link>
-          </Button>
-        </li>
-      </ul>
-    </nav>
-  </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }
 
