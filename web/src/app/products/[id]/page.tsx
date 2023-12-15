@@ -24,7 +24,9 @@ export default async function Product({ params }: { params: ProductParams }) {
     <>
       <div className="m-10 w-2/4 flex justify-center border">
         <div key={product.id}>
-        <Button><Link href={"/"}>Tillbaka</Link></Button>
+          <Button>
+            <Link href={"/"}>Tillbaka</Link>
+          </Button>
           <h3 className="mt-5 flex justify-center">{product.title}</h3>
           <Image
             src={product.img}
@@ -35,7 +37,9 @@ export default async function Product({ params }: { params: ProductParams }) {
           <p>{product.description}</p>
           <p className="font-bold mt-5">{product.price}:-</p>
           <p className="mt-5">Antal i lager: {product.storage}</p>
-          <Button><AddToCartButton product={product} /></Button>
+          <AddToCartButton product={product} variant="default">
+            Lägg i varukorg
+          </AddToCartButton>
         </div>
       </div>
     </>

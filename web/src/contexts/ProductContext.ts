@@ -13,7 +13,3 @@ export const ProductContext = createContext<ProductContextType>({
 });
 
 export const useProductContext = () => useContext(ProductContext);
-
-// Fortsätt titta på https://www.youtube.com/watch?v=Ho3FFUbk9_w
-
-// client compoents with Dave https://www.youtube.com/watch?v=PcHY2Py6AQY&list=PL0Zuz27SZ-6Pk-QJIdGd1tGZEzy9RTgtj&index=5
