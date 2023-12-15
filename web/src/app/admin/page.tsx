@@ -66,12 +66,12 @@ export default function Admin() {
   };
 
   const links = [
-    { label: "Customers", href: "#" },
-    { label: "Orders", href: "#" },
-    { label: "Analythics", href: "#" },
-    { label: "Marketing", href: "#" },
-    { label: "Products", href: "#" },
-    { label: "Online store", href: "#" },
+    { label: "Kunder", href: "#" },
+    { label: "Ordrar", href: "#" },
+    { label: "Analyser", href: "#" },
+    { label: "Marknadsföring", href: "#" },
+    { label: "Produkter", href: "#" },
+    { label: "Onlinebutik", href: "#" },
   ];
 
   return (
