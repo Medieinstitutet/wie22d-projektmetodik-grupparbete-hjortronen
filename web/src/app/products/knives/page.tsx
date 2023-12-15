@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import ProductCategories from "../../../components/ProductCategories/productCategories"
 import ProductCard from "../../../components/ProductCard/productCard";
 import IProduct from "@/utils/interface/IProductCard";
 import Link from "next/link";
@@ -16,7 +16,7 @@ export default async function products() {
 
   return <>
     <p>Knives</p>
-
+    <ProductCategories />
     <div className="flex flex-wrap w-3/4">
       {specProductCategory.map((product: IProduct) => (
         <div className="ProductCardRender" key={product.id}>
