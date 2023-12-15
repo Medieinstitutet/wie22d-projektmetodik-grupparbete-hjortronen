@@ -11,21 +11,21 @@ function ProductCategories() {
       <nav className="bg-custom-400  m-5 p-5 rounded-md">
         <ul className="flex justify-center gap-4 text-white ">
           <li>
-            <Link href={"/products/pots"}>
+            <Link href={"/products/boards"}>
               <Button className="hover:text-custom-500" variant="primary">
                 Skärbrädor
               </Button>
             </Link>
           </li>
           <li>
-            <Link href={"/products/pots"}>
+            <Link href={"/products/knives"}>
               <Button className="hover:text-custom-500" variant="primary">
                 Knivar
               </Button>
             </Link>
           </li>
           <li>
-            <Link href={"/products/pots"}>
+            <Link href={"/products/pans"}>
               <Button className="hover:text-custom-500" variant="primary">
                 Stekpannor
               </Button>
