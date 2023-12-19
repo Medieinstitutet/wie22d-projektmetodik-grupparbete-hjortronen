@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "title": "De Buyer",
+      "description": "Stekpanna Kolstål Lyonnaise Mineral B Dia 28 cm",
+      "img": "https://static.goshopping.dk/products/600/de-buyer-lyonnaise-mineral-b-stegepande-28-cm-5610-28-17393-1.jpg",
+      "imgAlt": "Produktbild",
+      "category": "pans",
+      "storage": 15,
+      "price": 638
+    },
+    {
+      "id": 2,
+      "title": "Garcima",
+      "description": "Lyonnaise Stekpanna Kolstål 26 cm",
+      "img": "https://static.goshopping.dk/products/600/garcima-lyonnaise-stekpanna-kolstaal-gar88226-38018-1.jpg",
+      "imgAlt": "Produktbild",
+      "category": "pans",
+      "storage": 15,
+      "price": 549
+    },
+    {
+      "id": 3,
+      "title": "De Buyer",
+      "description": "Stekpanna Lyonnaise CARBONE PLUS 32 CM",
+      "img": "https://static.goshopping.dk/products/600/de-buyer-lyonnaise-carbone-plus-stegepande-32-cm-5110-32-17378-1.jpg",
+      "imgAlt": "Produktbild",
+      "category": "pans",
+      "storage": 15,
+      "price": 741
+    },
+    {
+      "id": 4,
+      "title": "Lodge",
+      "description": "Stekpanna Gjutjärn 30 cm",
+      "img": "https://static.goshopping.dk/products/600/lodge-stekpanna-gjutjaern-30-cm-l10sk3-29011-1.jpg",
+      "imgAlt": "Produktbild",
+      "category": "pans",
+      "storage": 15,
+      "price": 849
+    },
+    {
+      "id": 1702380934941,
+      "title": "Global ",
+      "description": "Skärbräda i ek, 30 x 20 cm",
+      "category": "boards",
+      "storage": 4,
+      "img": "https://static.goshopping.dk/products/600/global-skaerebraet-i-eg-g-cb3-53439-1.jpg",
+      "imgAlt": "product image",
+      "price": 199
+    },
+    {
+      "id": 1702381846877,
+      "title": "Culimat - Mathias Dahlgren edition",
+      "description": "Skärbräda i ek med ränna, 30x20x3 cm",
+      "category": "boards",
+      "storage": 5,
+      "img": "https://static.goshopping.dk/products/600/culimat-mathias-dahlgren-edition-skaerebraet-i-eg-med-rille-55033-57495-1.jpg",
+      "imgAlt": "product image",
+      "price": 674
+    },
+    {
+      "id": 1702404713440,
+      "title": "Aida",
+      "description": "RAW Skärbräda Teak 40x30x2 cm",
+      "category": "boards",
+      "storage": 2,
+      "img": "https://static.goshopping.dk/products/600/aida-raw-skaerbraeda-servering-teak-15471-45712-1.jpg",
+      "imgAlt": "product image",
+      "price": 374
+    },
+    {
+      "id": 1702404999637,
+      "title": "Yaxell Zen",
+      "description": "Kockkniv 20 cm",
+      "category": "knives",
+      "storage": 5,
+      "img": "https://static.goshopping.dk/products/600/yaxell-zen-kockkniv-y-35500-31527-1.jpg",
+      "imgAlt": "product image",
+      "price": 1399
+    },
+    {
+      "id": 1702404999638,
+      "title": "Miyabi",
+      "description": "RAW 5000FCD Gyutoh Kockkniv 20 cm",
+      "category": "knives",
+      "storage": 5,
+      "img": "https://static.goshopping.dk/products/600/miyabi-raw-5000fcd-gyutoh-kockkniv-34681-201-0-34036-1.jpg",
+      "imgAlt": "product image",
+      "price": 1890
+    },
+    {
+      "id": 1702404999639,
+      "title": "Zanmai",
+      "description": "Classic Damascus Gyuto 21 cm",
+      "category": "knives",
+      "storage": 5,
+      "img": "https://static.goshopping.dk/products/600/zanmai-classic-damascus-gyuto-hkc-3005d-31536-1.jpg",
+      "imgAlt": "product image",
+      "price": 1911
+    },
+    {
+      "id": 170240499971,
+      "title": "Staub",
+      "description": "La Cocotte Oval Gryta Svart 11 cm 0,25 l",
+      "category": "pots",
+      "storage": 5,
+      "img": "https://static.goshopping.dk/products/600/staub-la-cocotte-oval-gryta-11-cm-0-25-liter-40500-111-0-33709-1.jpg",
+      "imgAlt": "product image",
+      "price": 547
+    },
+    {
+      "id": 1702404999672,
+      "title": "Ballarini",
+      "description": "Ti-X Kastrull 18 cm",
+      "category": "pots",
+      "storage": 5,
+      "img": "https://static.goshopping.dk/products/600/ballarini-salina-ti-x-granitium-kastrull-75002-813-0-40625-1.jpg",
+      "imgAlt": "product image",
+      "price": 676
+    },
+    {
+      "id": 1702404999673,
+      "title": "Mauviel",
+      "description": "Cook Style minikastrull med hällpip, 15 cl",
+      "category": "pots",
+      "storage": 5,
+      "img": "https://static.goshopping.dk/products/600/mauviel-cook-style-minikasserolle-med-haeldetud-20-cl-5110-08-43548-1.jpg",
+      "imgAlt": "product image",
+      "price": 666
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
