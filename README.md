@@ -65,10 +65,10 @@ För VG:
 
 ## Instruktioner för att starta upp den lokala json-servern
 1. Ställ dig i projektets rotmapp 
-2. Kör följande kommande i din terminal
+2. Kör följande kommando i din terminal
 
-    ```basch
-     npm install
+    ```bash
+     npm install -g json-server
      ```
 
 3. Kör därefter följande kommando i din terminal
@@ -76,5 +76,17 @@ För VG:
      ```bash
      json-server --watch ./db/productDB.json 
      ```
+4. Öppna en ny terminal och navigera till projektets rotmapp/web
+5. Kör följande kommando i din terminal
+
+     ```bash
+     npm install
+     ```
+6. Kör därefter följande kommando i din terminal
+
+     ```bash
+     npm run dev
+     ```
+7. Klicka på länken "http://localhost:4000" för att öppna sidan i din webläsare.
 
 
